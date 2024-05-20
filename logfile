@@ -1,0 +1,237 @@
+2024-05-17 17:27:23.266 EAT [20992] LOG:  starting PostgreSQL 16.2, compiled by Visual C++ build 1937, 64-bit
+2024-05-17 17:27:23.269 EAT [20992] LOG:  listening on IPv6 address "::1", port 5432
+2024-05-17 17:27:23.269 EAT [20992] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-05-17 17:27:23.310 EAT [21888] LOG:  database system was interrupted; last known up at 2024-05-17 17:21:05 EAT
+2024-05-17 17:27:24.265 EAT [21888] LOG:  database system was not properly shut down; automatic recovery in progress
+2024-05-17 17:27:24.270 EAT [21888] LOG:  redo starts at 0/16B47740
+2024-05-17 17:27:24.270 EAT [21888] LOG:  invalid record length at 0/16B47828: expected at least 24, got 0
+2024-05-17 17:27:24.270 EAT [21888] LOG:  redo done at 0/16B477F0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2024-05-17 17:27:24.276 EAT [9736] LOG:  checkpoint starting: end-of-recovery immediate wait
+2024-05-17 17:27:24.298 EAT [9736] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.005 s, total=0.025 s; sync files=2, longest=0.003 s, average=0.003 s; distance=0 kB, estimate=0 kB; lsn=0/16B47828, redo lsn=0/16B47828
+2024-05-17 17:27:24.319 EAT [20992] LOG:  database system is ready to accept connections
+2024-05-17 17:27:54.699 EAT [21796] FATAL:  database "kurasa_exercise" does not exist
+2024-05-17 17:32:12.294 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.294 EAT [10444] STATEMENT:  ALTER SCHEMA reporting OWNER TO postgres;
+2024-05-17 17:32:12.344 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.344 EAT [10444] STATEMENT:  ALTER TYPE public.assessment_status OWNER TO postgres;
+2024-05-17 17:32:12.357 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.357 EAT [10444] STATEMENT:  ALTER FUNCTION public.admin_dashboard_stats(period character varying, user_id integer, school_id integer) OWNER TO postgres;
+2024-05-17 17:32:12.361 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.361 EAT [10444] STATEMENT:  ALTER FUNCTION public.create_school_folder() OWNER TO postgres;
+2024-05-17 17:32:12.368 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.368 EAT [10444] STATEMENT:  ALTER FUNCTION public.filter_school_user_logins(start_date timestamp without time zone, end_date timestamp without time zone, school_id integer) OWNER TO postgres;
+2024-05-17 17:32:12.372 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.372 EAT [10444] STATEMENT:  ALTER FUNCTION public.fn_add_record() OWNER TO postgres;
+2024-05-17 17:32:12.374 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.374 EAT [10444] STATEMENT:  ALTER FUNCTION public.fn_updatedat() OWNER TO postgres;
+2024-05-17 17:32:12.377 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.377 EAT [10444] STATEMENT:  ALTER FUNCTION public.generate_teacher_tt(teacher_id bigint) OWNER TO postgres;
+2024-05-17 17:32:12.385 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.385 EAT [10444] STATEMENT:  ALTER FUNCTION public.generate_tt(datestart date, schoolid bigint) OWNER TO postgres;
+2024-05-17 17:32:12.389 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.389 EAT [10444] STATEMENT:  ALTER FUNCTION public.insert_transition_record() OWNER TO postgres;
+2024-05-17 17:32:12.392 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.392 EAT [10444] STATEMENT:  ALTER FUNCTION public.missed_attendance_days(teacher_id integer) OWNER TO postgres;
+2024-05-17 17:32:12.396 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.396 EAT [10444] STATEMENT:  ALTER FUNCTION public.processtillsummaries_date(summarydate date) OWNER TO postgres;
+2024-05-17 17:32:12.403 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.403 EAT [10444] STATEMENT:  ALTER FUNCTION public.transition_stream(prev_stream bigint, curr_stream bigint, prev_academic_year bigint, curr_academic_year bigint, transition_type character varying) OWNER TO postgres;
+2024-05-17 17:32:12.407 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.407 EAT [10444] STATEMENT:  ALTER TABLE public.aa_rubris_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.423 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.423 EAT [10444] STATEMENT:  ALTER TABLE public.administrators OWNER TO postgres;
+2024-05-17 17:32:12.427 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.427 EAT [10444] STATEMENT:  ALTER TABLE public.administrators_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.440 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.440 EAT [10444] STATEMENT:  ALTER TABLE public.attendance OWNER TO postgres;
+2024-05-17 17:32:12.443 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.443 EAT [10444] STATEMENT:  ALTER TABLE public.attendance_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.452 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.452 EAT [10444] STATEMENT:  ALTER TABLE public.attendance_types OWNER TO postgres;
+2024-05-17 17:32:12.455 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.455 EAT [10444] STATEMENT:  ALTER TABLE public.attendance_types_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.466 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.466 EAT [10444] STATEMENT:  ALTER TABLE public.cbc_assesments OWNER TO postgres;
+2024-05-17 17:32:12.471 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.471 EAT [10444] STATEMENT:  ALTER TABLE public.cbc_assesments_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.484 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.484 EAT [10444] STATEMENT:  ALTER TABLE public.comments OWNER TO postgres;
+2024-05-17 17:32:12.488 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.488 EAT [10444] STATEMENT:  ALTER TABLE public.comments_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.499 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.499 EAT [10444] STATEMENT:  ALTER TABLE public.ztbl_course_assessment_rubrics OWNER TO postgres;
+2024-05-17 17:32:12.504 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.504 EAT [10444] STATEMENT:  ALTER TABLE public.course_assesment_rubics_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.513 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.513 EAT [10444] STATEMENT:  ALTER TABLE public.days OWNER TO postgres;
+2024-05-17 17:32:12.523 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.523 EAT [10444] STATEMENT:  ALTER TABLE public.failed_jobs OWNER TO postgres;
+2024-05-17 17:32:12.526 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.526 EAT [10444] STATEMENT:  ALTER TABLE public.failed_jobs_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.538 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.538 EAT [10444] STATEMENT:  ALTER TABLE public.feed_activity_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.546 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.546 EAT [10444] STATEMENT:  ALTER TABLE public.general_comments OWNER TO postgres;
+2024-05-17 17:32:12.556 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.556 EAT [10444] STATEMENT:  ALTER TABLE public.generated_merged_report_files OWNER TO postgres;
+2024-05-17 17:32:12.567 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.567 EAT [10444] STATEMENT:  ALTER TABLE public.generated_timetable OWNER TO postgres;
+2024-05-17 17:32:12.572 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.572 EAT [10444] STATEMENT:  ALTER TABLE public.generated_timetable_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.576 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.576 EAT [10444] STATEMENT:  ALTER TABLE public.guardian_public_access_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.588 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.588 EAT [10444] STATEMENT:  ALTER TABLE public.guardian_public_access OWNER TO postgres;
+2024-05-17 17:32:12.595 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.595 EAT [10444] STATEMENT:  ALTER TABLE public.guardian_student OWNER TO postgres;
+2024-05-17 17:32:12.601 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.601 EAT [10444] STATEMENT:  ALTER TABLE public.guardian_student_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.607 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.607 EAT [10444] STATEMENT:  ALTER TABLE public.guardians OWNER TO postgres;
+2024-05-17 17:32:12.611 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.611 EAT [10444] STATEMENT:  ALTER TABLE public.guardians_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.618 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.618 EAT [10444] STATEMENT:  ALTER TABLE public.indicator_assessment_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.623 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.623 EAT [10444] STATEMENT:  ALTER TABLE public.indicator_assessments OWNER TO postgres;
+2024-05-17 17:32:12.633 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.633 EAT [10444] STATEMENT:  ALTER TABLE public.jobs OWNER TO postgres;
+2024-05-17 17:32:12.637 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.637 EAT [10444] STATEMENT:  ALTER TABLE public.jobs_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.650 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.650 EAT [10444] STATEMENT:  ALTER TABLE public.lesson_plans OWNER TO postgres;
+2024-05-17 17:32:12.659 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.659 EAT [10444] STATEMENT:  ALTER TABLE public.ministry_term_dates OWNER TO postgres;
+2024-05-17 17:32:12.667 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.667 EAT [10444] STATEMENT:  ALTER TABLE public.ministry_term_dates_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.674 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.674 EAT [10444] STATEMENT:  ALTER TABLE public.objects OWNER TO postgres;
+2024-05-17 17:32:12.680 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.680 EAT [10444] STATEMENT:  ALTER TABLE public.objects_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.692 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.692 EAT [10444] STATEMENT:  ALTER TABLE public.password_resets OWNER TO postgres;
+2024-05-17 17:32:12.703 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.703 EAT [10444] STATEMENT:  ALTER TABLE public.periods OWNER TO postgres;
+2024-05-17 17:32:12.710 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.710 EAT [10444] STATEMENT:  ALTER TABLE public.reactions OWNER TO postgres;
+2024-05-17 17:32:12.718 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.718 EAT [10444] STATEMENT:  ALTER TABLE public.reactions_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.727 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.727 EAT [10444] STATEMENT:  ALTER TABLE public.schemes OWNER TO postgres;
+2024-05-17 17:32:12.734 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.734 EAT [10444] STATEMENT:  ALTER TABLE public.schemes_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.742 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.742 EAT [10444] STATEMENT:  ALTER TABLE public.schemes_of_work_mains OWNER TO postgres;
+2024-05-17 17:32:12.750 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.750 EAT [10444] STATEMENT:  ALTER TABLE public.schemes_of_work_mains_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.759 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.759 EAT [10444] STATEMENT:  ALTER TABLE public.school OWNER TO postgres;
+2024-05-17 17:32:12.767 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.767 EAT [10444] STATEMENT:  ALTER TABLE public.school_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.772 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.772 EAT [10444] STATEMENT:  ALTER TABLE public.school_settings OWNER TO postgres;
+2024-05-17 17:32:12.775 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.775 EAT [10444] STATEMENT:  ALTER TABLE public.school_settings_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.786 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.786 EAT [10444] STATEMENT:  ALTER TABLE public.school_weeks OWNER TO postgres;
+2024-05-17 17:32:12.790 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.790 EAT [10444] STATEMENT:  ALTER TABLE public.school_weeks_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.801 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.801 EAT [10444] STATEMENT:  ALTER TABLE public.streams OWNER TO postgres;
+2024-05-17 17:32:12.805 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.805 EAT [10444] STATEMENT:  ALTER TABLE public.streams_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.816 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.816 EAT [10444] STATEMENT:  ALTER TABLE public.student_activities OWNER TO postgres;
+2024-05-17 17:32:12.820 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.820 EAT [10444] STATEMENT:  ALTER TABLE public.student_activities_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.833 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.833 EAT [10444] STATEMENT:  ALTER TABLE public.student_report_comments OWNER TO postgres;
+2024-05-17 17:32:12.837 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.837 EAT [10444] STATEMENT:  ALTER TABLE public.student_report_comments_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.844 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.844 EAT [10444] STATEMENT:  ALTER TABLE public.student_time_reports OWNER TO postgres;
+2024-05-17 17:32:12.854 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.854 EAT [10444] STATEMENT:  ALTER TABLE public.students OWNER TO postgres;
+2024-05-17 17:32:12.858 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.858 EAT [10444] STATEMENT:  ALTER TABLE public.students_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.870 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.870 EAT [10444] STATEMENT:  ALTER TABLE public.subject_options OWNER TO postgres;
+2024-05-17 17:32:12.875 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.875 EAT [10444] STATEMENT:  ALTER TABLE public.subject_options_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.882 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.882 EAT [10444] STATEMENT:  ALTER TABLE public.subject_teacher OWNER TO postgres;
+2024-05-17 17:32:12.887 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.887 EAT [10444] STATEMENT:  ALTER TABLE public.subject_teacher_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.896 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.896 EAT [10444] STATEMENT:  ALTER TABLE public.subjects OWNER TO postgres;
+2024-05-17 17:32:12.901 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.901 EAT [10444] STATEMENT:  ALTER TABLE public.subjects_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.906 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.906 EAT [10444] STATEMENT:  ALTER TABLE public.tbl_assessment_weights OWNER TO postgres;
+2024-05-17 17:32:12.916 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.916 EAT [10444] STATEMENT:  ALTER TABLE public.tbl_comments OWNER TO postgres;
+2024-05-17 17:32:12.921 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.921 EAT [10444] STATEMENT:  ALTER TABLE public.tbl_comments_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.925 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.925 EAT [10444] STATEMENT:  ALTER TABLE public.tbl_comments_id_seq1 OWNER TO postgres;
+2024-05-17 17:32:12.932 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.932 EAT [10444] STATEMENT:  ALTER TABLE public.ztbl_course_subjects_map OWNER TO postgres;
+2024-05-17 17:32:12.937 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.937 EAT [10444] STATEMENT:  ALTER TABLE public.tbl_course_subjects_map_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.944 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.944 EAT [10444] STATEMENT:  ALTER TABLE public.tbl_folder_mappings OWNER TO postgres;
+2024-05-17 17:32:12.959 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.959 EAT [10444] STATEMENT:  ALTER TABLE public.tbl_generated_files OWNER TO postgres;
+2024-05-17 17:32:12.973 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.973 EAT [10444] STATEMENT:  ALTER TABLE public.tbl_grades OWNER TO postgres;
+2024-05-17 17:32:12.977 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.977 EAT [10444] STATEMENT:  ALTER TABLE public.tbl_grades_id_seq OWNER TO postgres;
+2024-05-17 17:32:12.985 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.985 EAT [10444] STATEMENT:  ALTER TABLE public.tbl_level_subjects OWNER TO postgres;
+2024-05-17 17:32:12.989 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:12.989 EAT [10444] STATEMENT:  ALTER TABLE public.tbl_level_subjects_id_seq OWNER TO postgres;
+2024-05-17 17:32:13.000 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:13.000 EAT [10444] STATEMENT:  ALTER TABLE public.tbl_objects OWNER TO postgres;
+2024-05-17 17:32:13.004 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:13.004 EAT [10444] STATEMENT:  ALTER TABLE public.tbl_objects_id_seq OWNER TO postgres;
+2024-05-17 17:32:13.008 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:13.008 EAT [10444] STATEMENT:  ALTER TABLE public.tbl_ref_days_id_seq OWNER TO postgres;
+2024-05-17 17:32:13.014 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:13.014 EAT [10444] STATEMENT:  ALTER TABLE public.tbl_ref_periods_id_seq OWNER TO postgres;
+2024-05-17 17:32:13.026 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:13.026 EAT [10444] STATEMENT:  ALTER TABLE public.tbl_ref_subjects_in_grades OWNER TO postgres;
+2024-05-17 17:32:13.035 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:13.035 EAT [10444] STATEMENT:  ALTER TABLE public.tbl_ref_subjects_in_grades_id_seq OWNER TO postgres;
+2024-05-17 17:32:13.039 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:13.039 EAT [10444] STATEMENT:  ALTER TABLE public.tbl_report_batch OWNER TO postgres;
+2024-05-17 17:32:13.050 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:13.050 EAT [10444] STATEMENT:  ALTER TABLE public.tbl_reports_jobs OWNER TO postgres;
+2024-05-17 17:32:13.054 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:13.054 EAT [10444] STATEMENT:  ALTER TABLE public.tbl_school_courses_map_id_seq OWNER TO postgres;
+2024-05-17 17:32:13.057 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:13.057 EAT [10444] STATEMENT:  ALTER TABLE public.ztbl_school_courses_map OWNER TO postgres;
+2024-05-17 17:32:13.061 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:13.061 EAT [10444] STATEMENT:  ALTER TABLE public.tbl_school_courses_map_id_seq1 OWNER TO postgres;
+2024-05-17 17:32:13.072 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:13.072 EAT [10444] STATEMENT:  ALTER TABLE public.tbl_student_transition OWNER TO postgres;
+2024-05-17 17:32:13.076 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:13.076 EAT [10444] STATEMENT:  ALTER TABLE public.tbl_student_transition_id_seq OWNER TO postgres;
+2024-05-17 17:32:13.089 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:13.089 EAT [10444] STATEMENT:  ALTER TABLE public.tbl_templates OWNER TO postgres;
+2024-05-17 17:32:13.093 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:13.093 EAT [10444] STATEMENT:  ALTER TABLE public.tbl_user_preferences_id_seq OWNER TO postgres;
+2024-05-17 17:32:13.104 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:13.104 EAT [10444] STATEMENT:  ALTER TABLE public.tbl_user_preferences OWNER TO postgres;
+2024-05-17 17:32:13.108 EAT [10444] ERROR:  role "postgres" does not exist
+2024-05-17 17:32:13.108 EAT [10444] STATEMENT:  ALTER TABLE public.teachers OWNER TO postgres;
+2024-05-17 17:32:24.306 EAT [9736] LOG:  checkpoint starting: time
+2024-05-17 17:32:33.113 EAT [20992] LOG:  received fast shutdown request
+2024-05-17 17:32:33.113 EAT [7308] ERROR:  canceling statement due to user request
+2024-05-17 17:32:33.119 EAT [20992] LOG:  aborting any active transactions
+2024-05-17 17:32:33.119 EAT [10444] FATAL:  terminating connection due to administrator command
+2024-05-17 17:32:33.119 EAT [20992] LOG:  background worker "logical replication launcher" (PID 7308) exited with exit code 1
+2024-05-17 17:32:33.526 EAT [9736] LOG:  checkpoint complete: wrote 225 buffers (1.4%); 0 WAL file(s) added, 0 removed, 0 recycled; write=8.815 s, sync=0.389 s, total=9.221 s; sync files=223, longest=0.069 s, average=0.002 s; distance=1307 kB, estimate=1307 kB; lsn=0/16CB5108, redo lsn=0/16C8E490
+2024-05-17 17:32:33.531 EAT [9736] LOG:  shutting down
+2024-05-17 17:32:33.534 EAT [9736] LOG:  checkpoint starting: shutdown immediate
+2024-05-17 17:32:33.578 EAT [9736] LOG:  checkpoint complete: wrote 21 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.027 s, total=0.048 s; sync files=8, longest=0.005 s, average=0.004 s; distance=155 kB, estimate=1191 kB; lsn=0/16CB5180, redo lsn=0/16CB5180
+2024-05-17 17:32:33.586 EAT [20992] LOG:  database system is shut down
